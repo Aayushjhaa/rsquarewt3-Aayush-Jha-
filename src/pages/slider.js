@@ -55,6 +55,7 @@ const SliderComponent=(props)=>{
                 // valueLabelDisplay="auto"
                 marks={marks}
                 className='slider-bar'
+                onValueChange={val => this.setState({ distance: val })}
             />
             <div className="button">
                 <button className="inner-container--button">Continue</button>
